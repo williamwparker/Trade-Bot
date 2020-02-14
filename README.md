@@ -1,6 +1,6 @@
 # Trade Bot
 
-Work in progress of a trade bot based on ideas of Bollen et al.
+Work in progress of a trade bot based on ideas of Bollen et al. in the paper:
 
 https://arxiv.org/pdf/1010.3003.pdf
 
