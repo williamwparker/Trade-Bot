@@ -11,12 +11,13 @@ tweets.py gets daily tweets and runs sentiment analysis based on two different m
 Also, Yahoo finance is scraped and the opening price is stored for SPY, which is an indexed fund of the S&P 500. It can optionally take other stock tickers.
 
 Example:
-      Date    Sentiment   SPY
-17	1/6/20	0.091364888	320.49
-18	1/7/20	0.110241748	323.02
-19	1/8/20	0.090223494	322.94
-20	1/9/20	0.109435562	326.16
-21	1/10/20	0.090665494	327.29
+|     |Date       |Sentiment        |SPY
+|-----|-----------|-----------|-----|
+|17	|1/6/20	|0.091364888	|320.49
+|18	|1/7/20	|0.110241748	|323.02
+|19	|1/8/20	|0.090223494	|322.94
+|20	|1/9/20	|0.109435562	|326.16
+|21	|1/10/20	|0.090665494	|327.29
 
 trade.py is where future work can be done after enough daily twitter sentiment scores can be built up. trade.py can be modified to use the Alpace API to make free trades based on the algorithm
 
