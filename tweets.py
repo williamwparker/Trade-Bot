@@ -39,7 +39,6 @@ def stream(data, file_name, days_to_subtract = 0, tweets_to_get = 2000, market =
                                 'user_followers', 'User_location', 
                                 'fav_count', 'rt_count', 'tweet_date', 'lat', 'lng', 'place', 'country'])
 
-    #for tweet in tweepy.Cursor(api.search, tweet_mode="extended", q="place:%s AND 'trump'" % place_id, count=100, until=search_date, lang='en').items():
     for tweet in tweepy.Cursor(api.search, tweet_mode="extended", q="place:%s" % place_id, count=100, until=search_date, lang='en').items():
         print(i, end='\r')
         df.loc[i, 'tweets'] = tweet.full_text
